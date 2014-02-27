@@ -10,7 +10,7 @@
 
 using namespace std;
 
-int time = 0;
+int timeOut = 0;
 
 void dfs(set<int> graph[], int theResult[], bool visited[], int node)
 {
@@ -20,7 +20,7 @@ void dfs(set<int> graph[], int theResult[], bool visited[], int node)
 			dfs(graph, theResult, visited, *it);
 		}		
 	}
-	theResult[time++] = node;
+	theResult[timeOut++] = node;
 }
 
 void readGraphFromFile(set<int> graph[])
